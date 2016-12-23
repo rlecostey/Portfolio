@@ -1,0 +1,13 @@
+/* Button design */
+.btn-banner {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #31e981;
+  border-radius: 2px;
+}
+
+.btn-banner:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #31e981;
+  border-color: white;
+  border-radius: 2px;
+}

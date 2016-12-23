@@ -1,0 +1,16 @@
+/* Avatar design */
+.avatar {
+  flex: -1 0 40%;
+
+}
+
+.avatar img {
+  border-radius: 50%;
+  border: solid 5px lightgrey;
+}
+
+@media screen and (max-width: 640px) {
+  .avatar {
+    flex: inherit;
+  }
+}
