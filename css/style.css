@@ -221,6 +221,24 @@ span:after {
 
 @media (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi) {
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size:1em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+
   .description-container {
     justify-content: inherit;
     display: block;
