@@ -238,6 +238,10 @@ span:after {
     font-size: 2em;
   }
 
+  .footer p {
+    font-size: 1em;
+  }
+
 
   .description-container {
     justify-content: inherit;
