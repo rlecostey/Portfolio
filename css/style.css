@@ -219,7 +219,8 @@ span:after {
 }
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 640px) (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
   .description-container {
     justify-content: inherit;
     display: block;
