@@ -219,8 +219,28 @@ span:after {
 }
 
 
-@media screen and (max-width: 640px) (-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {
+ @media  only screen and (max-width: 981px) and (-webkit-min-device-pixel-ratio: 2), only screen  (min-resolution: 192dpi) {
+  .description-container {
+    justify-content: inherit;
+    display: block;
+  }
+
+  .description {
+    flex: inherit;
+    text-align: center;
+  }
+
+  .experiences-row p {
+    padding: 0;
+  }
+
+  .education-row p {
+    padding: 0;
+  }
+ }
+
+
+@media screen and (max-width: 640px) {
   .description-container {
     justify-content: inherit;
     display: block;
