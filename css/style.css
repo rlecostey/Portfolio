@@ -55,6 +55,7 @@ a:hover {
   top: 0px;
   width: 100%;
   z-index: 15;
+  opacity: 0.9;
 }
 
 .row {
