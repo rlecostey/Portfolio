@@ -26,13 +26,13 @@ h2 {
 h3 {
   font-size: 16px;
   margin-bottom: 15px;
-  text-align: justify;
+  text-align: center;
 }
 
 p {
   color: grey;
   font-size: 12px;
-  text-align: justify;
+  text-align: center;
 }
 
 a {
@@ -44,6 +44,10 @@ a {
 a:hover {
   text-decoration: none;
   color: #31e981;
+}
+
+.description p, .description h3 {
+  text-align: justify;
 }
 
 .menu {
@@ -81,10 +85,6 @@ a:hover {
   padding: 15px 50px;
 }
 
-.experiences-row h3 {
-  text-align: center;
-}
-
 .experiences-row p {
   padding: 0 50px 0px 50px;
 }
@@ -109,10 +109,6 @@ a:hover {
 .education-row img {
   border-radius: 50%;
   border: 3px solid lightgrey;
-}
-
-.education-row h3 {
-  text-align: center;
 }
 
 .education-row p {
@@ -213,12 +209,10 @@ span:after {
 
 .footer-container h3 {
   padding: 20px;
-  text-align: center;
 }
 
 .footer-container p {
   padding-top: 40px;
-  text-align: center;
 }
 
 .footer-container .fa-linkedin {
