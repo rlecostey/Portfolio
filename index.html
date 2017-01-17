@@ -12,6 +12,23 @@
     <meta prefix="og: http://ogp.me/ns#" property='og:url' content='https://rlecostey.github.io/Portfolio'/>
     <meta prefix="og: http://ogp.me/ns#" property='og:image' content='https://rlecostey.github.io/Portfolio/images/portfolio.jpg'/>
     <meta prefix="og: http://ogp.me/ns#" property='og:description' content='My personnal Web Developer portfolio'/>
+    <script src="http://popcornjs.org/code/dist/popcorn-complete.min.js"></script>
+    <script>
+      // ensure the web page (DOM) has loaded
+      document.addEventListener("DOMContentLoaded", function () {
+         // Create a popcorn instance by calling Popcorn("#id-of-my-video")
+         var pop = Popcorn("#ourvideo");
+         // add a footnote at 2 seconds, and remove it at 6 seconds
+         pop.footnote({
+           start: 2,
+           end: 6,
+           text: "Pop!",
+           target: "footnotediv"
+         });
+         // play the video right away
+         pop.play();
+      }, false);
+    </script>
   </head>
   <body>
     <div class="banner text-center" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/banner.jpg');">
@@ -167,10 +184,15 @@
         <h1>Projects</h1>
         <div class="project">
           <div class="project-icon text-right">
-            <a href="https://www.dropbox.com/s/24zg9jry6y654c5/MacFlight.mkv?dl=0"><img src="images/mac-flight.svg" alt="Mac Flight"></a>
+            <img src="images/mac-flight.svg" alt="Mac Flight">
           </div>
-          <div class="project-interface">
-            <a href="https://www.dropbox.com/s/24zg9jry6y654c5/MacFlight.mkv?dl=0"><img src="images/mac-flight-interface.svg" alt=""></a>
+          <div class="project-interface" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/mac-flight-interface.svg')">
+            <video height="150" width="250" id="ourvideo" controls>
+              <source src="videos/MacFlight.mkv">
+              <source src="http://videos.mozilla.org/serv/webmademovies/popcornplug.ogv">
+              <source src="http://videos.mozilla.org/serv/webmademovies/popcornplug.webm">
+            </video>
+            <!-- <a href="videos/MacFlight.mkv"><img src="images/mac-flight-interface.svg" alt=""></a> -->
           </div>
           <div class="project-description">
             <h3>MacFlight.fr</h3>
