@@ -207,6 +207,10 @@ span:after {
   border-radius: 10px;
 }
 
+.display {
+  display: block;
+}
+
 .project-description {
   flex: 0 0 50%;
   padding-left: 10px;

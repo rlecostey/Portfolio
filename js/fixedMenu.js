@@ -31,4 +31,26 @@
   }
   window.addEventListener('scroll', onScroll)
 
+  var macFlightPicture = document.querySelector('.mac-flight-interface')
+  var player = document.querySelector('.player')
+  var video = document.querySelector("#ourvideo")
+  console.log(player)
+  console.log(macFlightPicture)
+  console.log(video)
+  function displayPlayer(){
+    macFlightPicture.style.display = "none";
+    player.style.display = "block";
+    document.getElementById("ourvideo").click();
+  }
+  macFlightPicture.addEventListener('click', displayPlayer)
+
+
+
+ function hidePlayer(){
+    player.style.display = "none";
+    macFlightPicture.style.display = "";
+ }
+ video.addEventListener('ended', hidePlayer)
+
+
 })()
