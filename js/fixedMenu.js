@@ -8,8 +8,19 @@
 
   var element = document.querySelector('.menu')
   var top = element.getBoundingClientRect().top + scrollY()
-  console.log(top)
-  console.log(element)
+  var menuTitles = document.querySelectorAll('.menu-title')
+
+  for(var i = 0; i < menuTitles.length; i++){
+    var title = menuTitles[i]
+    function activeTitle(){
+      var oldActiveTitle = document.querySelector('.active')
+      if (oldActiveTitle !== null){
+        oldActiveTitle.classList.remove('active')
+      }
+      this.classList.add('active')
+    }
+    title.addEventListener('click', activeTitle)
+  }
 
   function onScroll(){
     if (scrollY() > top){

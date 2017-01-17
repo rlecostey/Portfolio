@@ -56,6 +56,18 @@ a:hover {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
 }
 
+.menu a:hover {
+  color: #31e981;
+  transition: color 0.5s;
+}
+
+.active {
+  text-decoration: none;
+  color: #31e981;
+  padding:12px;
+  border-bottom: 5px solid #31e981;
+}
+
 .fixed {
   position: fixed;
   top: 0px;
