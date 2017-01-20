@@ -45,7 +45,10 @@
   }
   if (touchDevice){
     macFlightPicture.addEventListener('click', displayPlayer)
-
+    player.setAttribute('width', '1px');
+    player.setAttribute('height', '1px');
+    player.setAttribute('scrolling', 'no');
+    player.style.border="0px";
   } else {
     macFlightPicture.addEventListener('click', displayPlayer)
   }
