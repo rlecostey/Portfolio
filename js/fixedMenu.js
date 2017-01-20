@@ -44,7 +44,8 @@
     // document.getElementById("ourvideo").click();
   }
   if (touchDevice){
-    macFlightPicture.addEventListener('touchstart', displayPlayer)
+    macFlightPicture.addEventListener('click', displayPlayer)
+
   } else {
     macFlightPicture.addEventListener('click', displayPlayer)
   }
