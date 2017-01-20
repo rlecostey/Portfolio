@@ -34,16 +34,19 @@
   var macFlightPicture = document.querySelector('.mac-flight-interface')
   var player = document.querySelector('.player')
   var video = document.querySelector("#ourvideo")
-  var clickEvent = ((document.ontouchstart!==null)?'click':'touchstart');
-  console.log(player)
-  console.log(macFlightPicture)
-  console.log(video)
+  var touchDevice = ('ontouchstart' in document.documentElement);
+
   function displayPlayer(){
     macFlightPicture.style.display = "none";
     player.style.display = "block";
     document.getElementById("ourvideo").click();
   }
-  macFlightPicture.addEventListener(clickEvent, displayPlayer)
+  if (touchDevice){
+    macFlightPicture.addEventListener('touchstart', displayPlayer)
+  } else {
+    macFlightPicture.addEventListener('click', displayPlayer)
+  }
+
 
 
 
