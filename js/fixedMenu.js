@@ -34,6 +34,7 @@
   var macFlightPicture = document.querySelector('.mac-flight-interface')
   var player = document.querySelector('.player')
   var video = document.querySelector("#ourvideo")
+  var clickEvent = ((document.ontouchstart!==null)?'click':'touchstart');
   console.log(player)
   console.log(macFlightPicture)
   console.log(video)
@@ -42,7 +43,7 @@
     player.style.display = "block";
     document.getElementById("ourvideo").click();
   }
-  macFlightPicture.addEventListener('click', displayPlayer)
+  macFlightPicture.addEventListener(clickEvent, displayPlayer)
 
 
 

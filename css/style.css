@@ -44,6 +44,7 @@ a {
 a:hover {
   text-decoration: none;
   color: #31e981;
+  transition: 0.3s;
 }
 
 .description p, .description h3 {
@@ -58,7 +59,6 @@ a:hover {
 
 .menu a:hover {
   color: #31e981;
-  transition: color 0.5s;
 }
 
 .active {
@@ -201,10 +201,15 @@ span:after {
   width:50%;
 }
 
+
 .project-interface img {
   flex: 0 0 30%;
   width: 80%;
   border-radius: 10px;
+}
+
+.project-interface img:hover {
+  opacity: 0.8;
 }
 
 .display {
