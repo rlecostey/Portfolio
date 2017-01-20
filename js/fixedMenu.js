@@ -39,7 +39,9 @@
   function displayPlayer(){
     macFlightPicture.style.display = "none";
     player.style.display = "block";
-    document.getElementById("ourvideo").click();
+    player.load();
+    player.play();
+    // document.getElementById("ourvideo").click();
   }
   if (touchDevice){
     macFlightPicture.addEventListener('touchstart', displayPlayer)
