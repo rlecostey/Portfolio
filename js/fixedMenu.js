@@ -9,6 +9,13 @@
   var element = document.querySelector('.menu')
   var top = element.getBoundingClientRect().top + scrollY()
   var menuTitles = document.querySelectorAll('.menu-title')
+  var bannerButton = document.querySelector('.btn-banner')
+  bannerButton.addEventListener('click', function () {
+    menuTitles[0].classList.add('active')
+    for ( let i = 1; i < menuTitles.length; i++) {
+      menuTitles[i].classList.remove('active')
+    }
+  })
 
   for(var i = 0; i < menuTitles.length; i++){
     var title = menuTitles[i]
