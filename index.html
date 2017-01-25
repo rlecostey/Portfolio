@@ -13,6 +13,7 @@
     <meta prefix="og: http://ogp.me/ns#" property='og:image' content='https://rlecostey.github.io/Portfolio/images/portfolio.jpg'/>
     <meta prefix="og: http://ogp.me/ns#" property='og:description' content='My personnal Web Developer portfolio'/>
     <script src="http://popcornjs.org/code/dist/popcorn-complete.min.js"></script>
+    <script src="http://content.jwplatform.com/libraries/PLAYERID.js"> </script>
     <script>
       // ensure the web page (DOM) has loaded
       document.addEventListener("DOMContentLoaded", function () {
@@ -22,6 +23,7 @@
          pop.play();
       }, false);
     </script>
+
   </head>
   <body>
     <div class="banner text-center" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/banner.jpg');">
@@ -123,7 +125,7 @@
             <h1>Skills and tools</h1>
           </div>
           <div class="col-xs-12 col-md-5">
-            <h2>Devlopment</h2>
+            <h2>Development</h2>
             <div class="col-xs-4 col-md-4 icons">
               <div class="logo"><img src="images/ruby.png" alt="Ruby"><span>Ruby</span></div>
             </div>
@@ -173,6 +175,13 @@
         </div>
       </div>
       </div>
+      <div id="myElement"></div>
+      <script type="text/javaScript">
+      var playerInstance = jwplayer("#myElement");
+      playerInstance.setup({
+          file: "videos/MacFlight.mkv"
+      });
+      </script>
       <div id="projects" class="container text-center project-container">
         <h1>Projects</h1>
         <div class="project">
