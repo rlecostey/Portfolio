@@ -39,15 +39,15 @@
   window.addEventListener('scroll', onScroll)
 
   var macFlightPicture = document.querySelector('.mac-flight-interface')
-  var player = document.querySelector('.player')
+  var player = document.querySelector('#player')
   var video = document.querySelector("#ourvideo")
   var touchDevice = ('ontouchstart' in document.documentElement);
 
   function displayPlayer(){
     macFlightPicture.style.display = "none";
     player.style.display = "block";
-    player.load();
-    player.play();
+    video.load();
+    video.play();
     // document.getElementById("ourvideo").click();
   }
   if (touchDevice){

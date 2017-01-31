@@ -152,7 +152,7 @@ a:hover {
   position: right;
 }
 
-span {
+.skills-overlay {
   background-color:#000;
   border-radius: 5px;
   color: #fff;
@@ -166,7 +166,7 @@ span {
   width: 100%;
 }
 
-span:after {
+.skills-overlay:after {
     content:'';
     position:absolute;
     bottom:-4px;
@@ -181,7 +181,7 @@ span:after {
     transform:rotate(45deg);
 }
 
-.logo:hover span{
+.logo:hover .skills-overlay{
     display:block;
 }
 
