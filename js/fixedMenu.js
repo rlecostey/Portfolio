@@ -8,6 +8,7 @@
 
   var element = document.querySelector('.menu')
   var top = element.getBoundingClientRect().top + scrollY()
+  console.log(top)
   var menuTitles = document.querySelectorAll('.menu-title')
   var bannerButton = document.querySelector('.btn-banner')
   bannerButton.addEventListener('click', function () {
@@ -51,7 +52,7 @@
     // document.getElementById("ourvideo").click();
   }
   if (touchDevice){
-    macFlightPicture.addEventListener('click', displayPlayer)
+    macFlightPicture.addEventListener('click', displayPlayer).fadeIn( "slow" )
     player.setAttribute('width', '1px');
     player.setAttribute('height', '1px');
     player.setAttribute('scrolling', 'no');
@@ -67,7 +68,7 @@
     player.style.display = "none";
     macFlightPicture.style.display = "";
  }
- video.addEventListener('ended', hidePlayer)
+ video.addEventListener('ended', hidePlayer).fadeOut( "slow" )
 
 
 })()
