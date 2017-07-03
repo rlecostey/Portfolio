@@ -39,36 +39,45 @@
   }
   window.addEventListener('scroll', onScroll)
 
-  var macFlightPicture = document.querySelector('.mac-flight-interface')
-  var player = document.querySelector('#player')
-  var video = document.querySelector("#ourvideo")
-  var touchDevice = ('ontouchstart' in document.documentElement);
+  // var macFlightPicture = document.querySelector('.mac-flight-interface')
+  // var player = document.querySelector('#player')
+  // var video = document.querySelector("#ourvideo")
+  // var touchDevice = ('ontouchstart' in document.documentElement);
 
-  function displayPlayer(){
-    macFlightPicture.style.display = "none";
-    player.style.display = "block";
-    video.load();
-    video.play();
-    // document.getElementById("ourvideo").click();
-  }
-  if (touchDevice){
-    macFlightPicture.addEventListener('click', displayPlayer).fadeIn( "slow" )
-    player.setAttribute('width', '1px');
-    player.setAttribute('height', '1px');
-    player.setAttribute('scrolling', 'no');
-    player.style.border="0px";
-  } else {
-    macFlightPicture.addEventListener('click', displayPlayer)
-  }
+  // function displayPlayer(){
+  //   macFlightPicture.style.display = "none";
+  //   player.style.display = "block";
+  //   video.load();
+  //   video.play();
+  //   // document.getElementById("ourvideo").click();
+  // }
+  // if (touchDevice){
+  //   macFlightPicture.addEventListener('click', displayPlayer).fadeIn( "slow" )
+  //   player.setAttribute('width', '1px');
+  //   player.setAttribute('height', '1px');
+  //   player.setAttribute('scrolling', 'no');
+  //   player.style.border="0px";
+  // } else {
+  //   macFlightPicture.addEventListener('click', displayPlayer)
+  // }
+
+$('.video-modal').on('click', function(e){
+  console.log("show");
+  $( '#' + $(this).data('modal-id') ).modal();
+});
+
+$('body').on('hidden.bs.modal', function(e){
+  console.log("hide")
+  var video = document.getElementsByTagName("video");
+  video[0].load();
+});
 
 
-
-
- function hidePlayer(){
-    player.style.display = "none";
-    macFlightPicture.style.display = "";
- }
- video.addEventListener('ended', hidePlayer).fadeOut( "slow" )
+//  function hidePlayer(){
+//     player.style.display = "none";
+//     macFlightPicture.style.display = "";
+//  }
+//  video.addEventListener('ended', hidePlayer).fadeOut( "slow" )
 
 
 })()

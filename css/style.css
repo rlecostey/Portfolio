@@ -225,6 +225,29 @@ a:hover {
   text-align: left;
 }
 
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.modal-content {    
+  color: black;
+}
+
 .footer {
   background-color: #282F44;
   color: white;
@@ -319,3 +342,4 @@ a:hover {
     padding: 0;
   }
 }
+
